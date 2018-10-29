@@ -156,10 +156,11 @@ section {
 
 section.about-me img {
     float: right;
-    padding-bottom: 30px;
+    /* padding-bottom: 30px; */
     height: 325px;
-    /* width: 300px; */
-    padding-left: 20px;
+    /* padding-left: 20px; */
+    border-radius: 5px;
+    margin-left: 20px;
 }
 
 section h3 {
@@ -167,6 +168,7 @@ section h3 {
     color: #FBA332;
     font-size: 1.4rem;
     margin-bottom: 30px;
+    text-align: left;
 }
 
 section p {
@@ -182,6 +184,7 @@ section p {
     clear: both;
     display: block;
     height: auto;
+    text-align: center;
 }
 
 .section-container:after {
@@ -227,12 +230,17 @@ figcaption {
     background-color: #d5ebf1;
 }
 
+.project-row {
+    padding: 0px;
+    margin-bottom: 30px;
+}
+
 #projects p {
     /*    margin-bottom: 30px;*/
     margin: 20px 0 30px 5px;
 }
 
-#projects .row:not(:last-child) {
+#projects .project-row:not(:last-child) {
     margin-bottom: 70px;
     padding-bottom: 70px;
     border-bottom: 4px solid #888;
@@ -249,10 +257,11 @@ h4 {
     border-radius: 14px;
     width: 58%;
     padding: 0;
-    margin-bottom: 30px;
     opacity: .9;
     box-shadow: 3px 3px #aaa;
     display: inline-block;
+    line-height: normal;
+    vertical-align: middle;
 }
 
 .projectPic:hover {
@@ -267,7 +276,7 @@ h4 {
     padding-left: 6px;
     padding-right: 6px;
     margin-bottom: 7px;
-    background-color: #6580ac;
+    background-color: #e5b875;
     border: 1px solid #333;
 }
 
@@ -280,13 +289,15 @@ h4 {
     padding-left: 45px;
     width: 41%;
     display: inline-block;
+    line-height: normal;
+    vertical-align: middle;
 }
 
 button {
     text-decoration: none;
     padding: 5px 0;
     display: inline-block;
-    background-color: #193b6d;
+    background-color: saddlebrown;
     color: #F4F3F5;
     margin: 10px 5px 0 0;
     width: 90px;
@@ -336,11 +347,6 @@ footer {
     padding: 10px;
 }
 
-/*
-@media only screen and (min-width: 640px) .col-4 {
-    width: 30%;
-}
-*/
 
 /*Media Queries*/
 
@@ -367,6 +373,14 @@ footer {
         display: block;
     }
 
+    section.about-me img {
+        width: 40%;
+    }
+
+    figure img {
+        height: 80px;
+    }
+
 }
 
 
@@ -374,7 +388,15 @@ footer {
 
 @media only screen and (max-width: 480px) {
 
-
+    section.about-me img {
+        width: 75%;
+        display: block;
+        position: static;
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 25px;
+    }
 }
 
 /*iPhone portrait*/
