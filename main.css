@@ -276,14 +276,13 @@ footer {
 
 /*ipad landscape / small laptop*/
 
-@media only screen and (max-width: 1024px) {
-
-}
+@media only screen and (max-width: 1024px) {}
 
 
 /*ipad potrait*/
 
 @media only screen and (max-width: 768px) {
+
     nav h1 {
         text-align: center;
         position: static;
@@ -295,6 +294,16 @@ footer {
         display: block;
     }
 
+    section {
+        display: block;
+        clear: both;
+        background-color: #FFFFFF;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        width: 100%;
+        font-size: .85rem;
+    }
+
     section.about-me img {
         width: 40%;
     }
@@ -303,12 +312,11 @@ footer {
         height: 80px;
     }
 
-    @media only screen and (max-width: 768px){
-        .projectPic {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            width: 100%;
+    .projectPic {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
     }
 
     .project-description {
@@ -348,4 +356,3 @@ footer {
         width: 100%;
     }
 }
-
