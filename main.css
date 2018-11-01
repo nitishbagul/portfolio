@@ -48,6 +48,11 @@ nav ul {
     list-style: none;
 }
 
+.icon {
+    margin-right: 9px;
+    color: saddlebrown;
+}
+
 nav li {
     display: inline-block;
     padding-right: 15px;
